@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    --primary-color:  hsl(185, 75%, 39%);
+--secondary-color: hsl(229, 23%, 23%);
+--tertiary-color: hsl(227, 10%, 46%);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'kumbh sans';
+    position: relative;
+    overflow: hidden;
+}
+.bottom-graphics{
+    position: absolute;
+    bottom: -600px;
+    right: -770px;
+    z-index: -1;
+}
+
+.top-graphics{
+    position: absolute;
+    top: -680px;
+    left: -750px;
+    z-index: -1;
+}
+
+.card{
+    display: flex;
+    flex-direction:column;
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.top-section{
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    background-image: url('images/bg-pattern-card.svg');
+}
+
+.bottom-section{
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.headings{
+    text-align: center;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--secondary-color);
+}
+
+.name-age{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px
+}
+
+.age{
+    font-weight: 400;
+    color: var(--tertiary-color);
+}
+
+.place{
+    color: var(--tertiary-color);
+    margin-top:0;
+    font-size: 14px;
+}
+hr{
+    border: 1px solid hsl(0, 0%, 59%,0.1);
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 auto;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+li{
+    padding: 10px;
+    margin: 10px;
+    color: var(--tertiary-color);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.dp{
+    background-image: url('images/image-victor.jpg');
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 375px){
+    body{
+        /* background: url(../images/bg-pattern-bottom.svg) bottom -680px right -300px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat; */
+        background-color: var(--primary-color);
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .card{
+        width: 320px;
+    }
+    .top-graphics{
+        position: absolute;
+        top: -550px;
+        left: -300px;
+        z-index: -1;
+    }
+    .bottom-graphics{
+        position: absolute;
+        bottom: -680px;
+        right: -250px;
+        z-index: -1;
+    }
+}
+
+    
